@@ -118,6 +118,15 @@ M.launch=function()
 				descAfter:'<span class="red">Effect is only active when your total amount of buildings ends with 0.</span>',
 				quote:'You will find that life gets just a little bit sweeter if you can motivate this spirit with tidy numbers and properly-filled tax returns.',
 			},
+			'cps':{
+				name:'CPS, Spirit of CPS',
+				icon:[21,19],
+				descBefore:'<span class="red">You will get a bonus CPS boost with no cost.</span>',
+				desc1:'<span class="green">Your CPS will gain by 100%.</span>',
+				desc2:'<span class="green">Your CPS will gain by 50%.</span>',
+				desc3:'<span class="green">Your CPS will gain by 25%.</span>',
+				quote:'This spirit likes to give bonuses at NO cost.',
+			},
 		};
 		M.godsById=[];var n=0;
 		for (var i in M.gods){M.gods[i].id=n;M.gods[i].slot=-1;M.godsById[n]=M.gods[i];n++;}
@@ -127,12 +136,13 @@ M.launch=function()
 		M.slot[0]=-1;//diamond socket
 		M.slot[1]=-1;//ruby socket
 		M.slot[2]=-1;//jade socket
+		M.slot[3]=-1;//special socket
 		
 		M.slotNames=[
 			'Diamond','Ruby','Jade'
 		];
 		
-		M.swaps=3;//swaps left
+		M.swaps=4;//swaps left
 		M.swapT=Date.now();//the last time we swapped
 		
 		M.lastSwapT=0;//frames since last swap
@@ -360,6 +370,7 @@ M.launch=function()
 		'#templeSlot0{top:-4px;}'+
 		'#templeSlot1{top:0px;}'+
 		'#templeSlot2{top:4px;}'+
+		'#templeSlot3{top:14px;}'+
 		
 		'#templeInfo{position:relative;display:inline-block;margin:8px auto 0px auto;padding:8px 16px;padding-left:32px;text-align:center;font-size:11px;color:rgba(255,255,255,0.75);text-shadow:-1px 1px 0px #000;background:rgba(0,0,0,0.75);border-radius:16px;}'+
 		'</style>';
