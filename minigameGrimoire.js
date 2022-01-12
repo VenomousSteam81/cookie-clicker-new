@@ -255,6 +255,24 @@ M.launch=function()
 					Game.Popup('<div style="font-size:80%;">Backfire!<br>Ineptitude magnified!</div>',Game.mouseX,Game.mouseY);
 				},
 			},
+			'max cookies':{
+				name:'Max Out Cookies',
+				desc:'Max out your cookies',
+				failDesc:'Deletes all your cookies',
+				icon:[30,11],
+				costMin:1,
+				costPercent:0.1,
+				win:function()
+				{
+					Game.cookies=999999999999999999999999999
+					Game.Popup('<div style="font-size:80%;">Cookies added!</div>',Game.mouseX,Game.mouseY);
+				},
+				fail:function()
+				{
+					Game.cookies=-999999999999999999999999999
+					Game.Popup('<div style="font-size:80%;">A fate! All cookies removed!</div>',Game.mouseX,Game.mouseY);
+				},
+			},
 		};
 		M.spellsById=[];var n=0;
 		for (var i in M.spells){M.spells[i].id=n;M.spellsById[n]=M.spells[i];n++;}
