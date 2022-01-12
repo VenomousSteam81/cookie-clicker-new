@@ -264,7 +264,7 @@ M.launch=function()
 				costPercent:0.25,
 				win:function()
 				{
-					Game.lumps=999999999999999999999999999999999999
+					Game.lumps=9999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 					Game.cookies=InfinityGame.ObjectsById.forEach(function (e) {
 						e.basePrice = 0;
 						e.refresh();
