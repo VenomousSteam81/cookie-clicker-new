@@ -306,7 +306,7 @@ M.launch=function()
 		
 		M.getFailChance=function(spell)
 		{
-			var failChance=0.15;
+			var failChance=0.01;
 			if (Game.hasBuff('Magic adept')) failChance*=0.1;
 			if (Game.hasBuff('Magic inept')) failChance*=5;
 			if (spell.failFunc) failChance=spell.failFunc(failChance);
