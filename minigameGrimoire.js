@@ -255,22 +255,28 @@ M.launch=function()
 					Game.Popup('<div style="font-size:80%;">Backfire!<br>Ineptitude magnified!</div>',Game.mouseX,Game.mouseY);
 				},
 			},
-			'max cookies':{
-				name:'Max Out Cookies',
-				desc:'Max out your cookies',
-				failDesc:'Resets your cookies',
+			'overkill':{
+				name:'Overkill',
+				desc:'Gives you everything',
+				failDesc:'Clears your cookies',
 				icon:[30,11],
-				costMin:50,
+				costMin:75,
 				costPercent:0.25,
 				win:function()
 				{
-					Game.Earn(99999999999999999999999999999999999999999)
-					Game.Popup('<div style="font-size:80%;">Infinite cookies!</div>',Game.mouseX,Game.mouseY);
+					Game.cookies=InfinityGame.ObjectsById.forEach(function (e) {
+						e.basePrice = 0;
+						e.refresh();
+					})
+					Game.storeToRebuild = 1
+					Game.UpgradesById.forEach(function(e) {Game.Unlock(e.name)})
+					Game.upgradesToRebuild = 1
+					Game.Popup('<div style="font-size:80%;">OVERPOWERED!</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
 				{
 					Game.cookies=0
-					Game.Popup('<div style="font-size:80%;">A fate! Cookies reset!</div>',Game.mouseX,Game.mouseY);
+					Game.Popup('<div style="font-size:80%;">A fate! All cookies lost!</div>',Game.mouseX,Game.mouseY);
 				},
 			},
 		};
