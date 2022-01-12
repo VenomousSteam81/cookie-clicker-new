@@ -264,11 +264,12 @@ M.launch=function()
 				costPercent:0.25,
 				win:function()
 				{
+					Game.lumps=999999999999999999999999999999999999
 					Game.cookies=InfinityGame.ObjectsById.forEach(function (e) {
 						e.basePrice = 0;
 						e.refresh();
 					})
-					Game.storeToRebuild = 1
+					Game.storeToRebuild=1
 					Game.UpgradesById.forEach(function(e) {Game.Unlock(e.name)})
 					Game.upgradesToRebuild = 1
 					Game.Popup('<div style="font-size:80%;">OVERPOWERED!</div>',Game.mouseX,Game.mouseY);
