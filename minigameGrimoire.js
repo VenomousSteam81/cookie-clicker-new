@@ -258,19 +258,19 @@ M.launch=function()
 			'max cookies':{
 				name:'Max Out Cookies',
 				desc:'Max out your cookies',
-				failDesc:'Deletes all your cookies...',
+				failDesc:'Resets your cookies',
 				icon:[30,11],
 				costMin:1,
 				costPercent:0.1,
 				win:function()
 				{
-					Game.cookies=999999999999999999999999999
+					Game.Cookies=99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 					Game.Popup('<div style="font-size:80%;">Cookies added!</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
 				{
-					//Game.cookies=-999999999999999999999999999
-					Game.Popup('<div style="font-size:80%;">...</div>',Game.mouseX,Game.mouseY);
+					Game.cookies=0
+					Game.Popup('<div style="font-size:80%;">A fate! Cookies reset</div>',Game.mouseX,Game.mouseY);
 				},
 			},
 		};
