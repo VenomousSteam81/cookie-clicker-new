@@ -425,7 +425,7 @@ M.launch=function()
 			'</div>';
 		};
 		AddEvent(M.lumpRefill,'click',function(){
-			if (M.swaps<3)
+			if (M.swaps<5)
 			{Game.refillLump(1,function(){
 				M.swaps=5;
 				M.swapT=Date.now();
@@ -469,7 +469,7 @@ M.launch=function()
 	}
 	M.reset=function()
 	{
-		M.swaps=3;
+		M.swaps=5;
 		M.swapT=Date.now();
 		for (var i in M.slot) {M.slot[i]=-1;}
 		for (var i in M.gods)
@@ -488,7 +488,7 @@ M.launch=function()
 		if (M.swaps==0) t=1000*60*60*16;
 		else if (M.swaps==1) t=1000*60*60*4;
 		var t2=M.swapT+t-Date.now();
-		if (t2<=0 && M.swaps<3) {M.swaps++;M.swapT=Date.now();}
+		if (t2<=0 && M.swaps<5) {M.swaps++;M.swapT=Date.now();}
 		M.lastSwapT++;
 	}
 	M.draw=function()
@@ -511,7 +511,7 @@ M.launch=function()
 		if (M.swaps==0) t=1000*60*60*16;
 		else if (M.swaps==1) t=1000*60*60*4;
 		var t2=M.swapT+t-Date.now();
-		M.swapsL.innerHTML='Worship swaps : <span class="titleFont" style="color:'+(M.swaps>0?'#fff':'#c00')+';">'+M.swaps+'/'+(3)+'</span>'+((M.swaps<3)?' (next in '+Game.sayTime((t2/1000+1)*Game.fps,-1)+')':'');
+		M.swapsL.innerHTML='Worship swaps : <span class="titleFont" style="color:'+(M.swaps>0?'#fff':'#c00')+';">'+M.swaps+'/'+(5)+'</span>'+((M.swaps<5)?' (next in '+Game.sayTime((t2/1000+1)*Game.fps,-1)+')':'');
 	}
 	M.init(l('rowSpecial'+M.parent.id));
 }
