@@ -120,7 +120,7 @@ M.launch=function()
 			},
 			'cps':{
 				name:'CPS, Spirit of CPS',
-				icon:[21,19],
+				icon:[23,19],
 				descBefore:'<span class="red">You will get a bonus CPS boost with no cost.</span>',
 				desc1:'<span class="green">Your CPS will gain by 100%.</span>',
 				desc2:'<span class="green">Your CPS will gain by 50%.</span>',
