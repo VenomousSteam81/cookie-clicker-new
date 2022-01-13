@@ -125,6 +125,7 @@ M.launch=function()
 				desc1:'<span class="green">Your CPS will gain by 100%.</span>',
 				desc2:'<span class="green">Your CPS will gain by 50%.</span>',
 				desc3:'<span class="green">Your CPS will gain by 25%.</span>',
+				descSpc:'<span class="green">Your CPS will gain by 1000%.</span>',
 				quote:'This spirit likes to give bonuses at NO cost.',
 			},
 		};
@@ -139,10 +140,10 @@ M.launch=function()
 		M.slot[3]=-1;//special socket
 		
 		M.slotNames=[
-			'Diamond','Ruby','Jade'
+			'Diamond','Ruby','Jade', 'Special'
 		];
 		
-		M.swaps=4;//swaps left
+		M.swaps=5;//swaps left
 		M.swapT=Date.now();//the last time we swapped
 		
 		M.lastSwapT=0;//frames since last swap
@@ -160,6 +161,7 @@ M.launch=function()
 					(me.desc1?('<div class="templeEffect templeEffect1"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+me.desc1+'</div>'):'')+
 					(me.desc2?('<div class="templeEffect templeEffect2"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+me.desc2+'</div>'):'')+
 					(me.desc3?('<div class="templeEffect templeEffect3"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.desc3+'</div>'):'')+
+					(me.descSpc?('<div class="templeEffect templeEffectSpc"><div class="usesIcon shadowFilter templeGem templeGemSpc"></div>'+me.descSpc+'</div>'):'')+
 					(me.descAfter?('<div class="templeEffect">'+me.descAfter+'</div>'):'')+
 					(me.quote?('<q>'+me.quote+'</q>'):'')+
 				'</div></div>';
@@ -340,6 +342,7 @@ M.launch=function()
 		'.templeGod1{background-position:-60px 0px;} .templeGod1:hover{background-position:-60px -74px;} .templeGod1:active{background-position:-60px 74px;}'+
 		'.templeGod2{background-position:-120px 0px;} .templeGod2:hover{background-position:-120px -74px;} .templeGod2:active{background-position:-120px 74px;}'+
 		'.templeGod3{background-position:-180px 0px;} .templeGod3:hover{background-position:-180px -74px;} .templeGod3:active{background-position:-180px 74px;}'+
+		'.templeGodSpc{background-position:-240px 0px;} .templeGodSpc:hover{background-position:-240px -74px;} .templeGod4:active{background-position:-240px 74px;}'+
 		
 		'.templeGod:hover .templeIcon{top:-1px;}'+
 		'.templeGod.ready:hover .templeIcon{animation-name:bounce;animation-iteration-count:infinite;animation-duration:0.8s;}'+
@@ -354,6 +357,7 @@ M.launch=function()
 		'.templeGem1{background-position:-1104px -720px;}'+
 		'.templeGem2{background-position:-1128px -720px;}'+
 		'.templeGem3{background-position:-1104px -744px;}'+
+		'.templeGemSpc{background-position:-1128px -744px;}'+
 		
 		'.templeSlot .templeGod,.templeSlot .templeGod:hover,.templeSlot .templeGod:active{background:none;}'+
 		
@@ -370,7 +374,7 @@ M.launch=function()
 		'#templeSlot0{top:-4px;}'+
 		'#templeSlot1{top:0px;}'+
 		'#templeSlot2{top:4px;}'+
-		'#templeSlot3{top:14px;}'+
+		'#templeSlotSpc{top:8px;}'+
 		
 		'#templeInfo{position:relative;display:inline-block;margin:8px auto 0px auto;padding:8px 16px;padding-left:32px;text-align:center;font-size:11px;color:rgba(255,255,255,0.75);text-shadow:-1px 1px 0px #000;background:rgba(0,0,0,0.75);border-radius:16px;}'+
 		'</style>';
@@ -423,7 +427,7 @@ M.launch=function()
 		AddEvent(M.lumpRefill,'click',function(){
 			if (M.swaps<3)
 			{Game.refillLump(1,function(){
-				M.swaps=3;
+				M.swaps=5;
 				M.swapT=Date.now();
 				PlaySound('snd/pop'+Math.floor(Math.random()*3+1)+'.mp3',0.75);
 			});}
