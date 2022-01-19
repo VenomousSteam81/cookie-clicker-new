@@ -1,4 +1,5 @@
 ### This is not mine, and I will not credit it as mine
+* Cookie Clicker is Copyright Ortiel, 2020
 - I am in no way teamed, grouped, or associated with Ortiel
 - This is for learning purposes, fun, and learning purposes ONLY
 
@@ -19,3 +20,9 @@
 * Create at least 1 backup
     - Original version
 * I recommend that you do NOT use the save file that you played with this version on the original version, as it might break the file even more
+
+## WHY DON'T I SEE ANY OF THE FEATURES
+* If you use a new save file, you need to hit the `Legacy` button, which requires a minimum of `3,000,000,000,000 (3 trillion) cookies)`.
+
+## WHY WON'T ANYTHING WORK
+* Create an issue on the GitHub page with the template named `File an Issue`
