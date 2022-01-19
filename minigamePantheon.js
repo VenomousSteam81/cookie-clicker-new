@@ -121,12 +121,12 @@ M.launch=function()
 			'cps':{
 				name:'CPS, Spirit of CPS',
 				icon:[23,19],
-				descBefore:'<span class="red">You will get a bonus CPS boost with no cost.</span>',
-				desc1:'<span class="green">Your CPS will gain by 100%.</span>',
-				desc2:'<span class="green">Your CPS will gain by 50%.</span>',
-				desc3:'<span class="green">Your CPS will gain by 25%.</span>',
-				descSpc:'<span class="green">Your CPS will gain by 1000%.</span>',
-				quote:'This spirit likes to give bonuses at NO cost.',
+				descBefore:'<span class="red">You will get a bonus CPS boost.</span>',
+				desc1:'<span class="green">Your CPS gains by 100%.</span>',
+				desc2:'<span class="green">Your CPS gains by 50%.</span>',
+				desc3:'<span class="green">Your CPS gains by 25%.</span>',
+				descSpc:'<span class="green">Your CPS gains by 1000%.</span>',
+				quote:'This spirit likes to give OP bonuses at NO cost.',
 			},
 		};
 		M.godsById=[];var n=0;
@@ -188,7 +188,7 @@ M.launch=function()
 						(me.desc1?('<div class="templeEffect templeEffect1'+(me.slot==0?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+me.desc1+'</div>'):'')+
 						(me.desc2?('<div class="templeEffect templeEffect2'+(me.slot==1?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+me.desc2+'</div>'):'')+
 						(me.desc3?('<div class="templeEffect templeEffect3'+(me.slot==2?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.desc3+'</div>'):'')+
-						(me.descAfter?('<div class="templeEffect">'+me.descAfter+'</div>'):'')+
+						(me.desc3?('<div class="templeEffect templeEffectSpc'+(me.slot==3?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.descSpc+'</div>'):'')+
 						(me.quote?('<q>'+me.quote+'</q>'):'')+
 					'</div>'
 				):
