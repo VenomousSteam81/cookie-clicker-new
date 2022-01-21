@@ -1,3 +1,33 @@
-- name: Automatic Releases
-  uses: marvinpinto/action-automatic-releases@v1.2.1
-  
+---
+name: "release"
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  pre-release:
+    name: "Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      # ...
+      - name: "Build"
+        run: |
+          echo "done!"
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            *.js
+            *.md
+            *.txt
+            *.html
+            *.css
+            /workspace/img/*.png
+            /workspace/snd/*.mp3
