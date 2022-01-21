@@ -13,6 +13,18 @@
     - Pantheon (Gods)
         * CPS God
 
+## FAQ
+* How do I use this?
+    1. You need to download the latest release
+    2. If you need to, extract the folder called `cookie-clicker-new`
+    3. Double-click the `index.html` file
+    4. Upload a file from original version (not recommended), or create one
+
+* WHY DON'T I SEE ANY OF THE MINIGAMES
+    - I don't know how the minigames appear
+
+* WHY WON'T ANYTHING WORK
+    - Create an issue on the GitHub page
 
 ## IMPORTANT INFO ABOUT SAVE FILES
 * Do NOT create an issue saying that your save file broke because you used this!
@@ -20,9 +32,3 @@
 * Create at least 1 backup
     - Original version
 * I recommend that you do NOT use the save file that you played with this version on the original version, as it might break the file even more
-
-## WHY DON'T I SEE ANY OF THE FEATURES
-* I have no fix currently, ask a specialist
-
-## WHY WON'T ANYTHING WORK
-* Create an issue on the GitHub page with the template named `File an Issue`
