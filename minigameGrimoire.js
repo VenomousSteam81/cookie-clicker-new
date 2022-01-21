@@ -255,29 +255,40 @@ M.launch=function()
 					Game.Popup('<div style="font-size:80%;">Backfire!<br>Ineptitude magnified!</div>',Game.mouseX,Game.mouseY);
 				},
 			},
-			'overkill':{
-				name:'Overkill',
-				desc:'Gives you everything',
-				failDesc:'Clears your cookies',
+			'ninebillion lumps':{
+				name:'9 billion lumps',
+				desc:'Totals your lumps to 999,999,999,999',
+				failDesc:'Clears ALL your sugar lumps',
 				icon:[30,11],
 				costMin:75,
-				costPercent:0.25,
+				costPercent:0.10,
 				win:function()
 				{
-					Game.lumps=Infinity
-					Game.cookies=InfinityGame.ObjectsById.forEach(function (e) {
-						e.basePrice = 0;
-						e.refresh();
-					})
-					Game.storeToRebuild=1
-					Game.UpgradesById.forEach(function(e) {Game.Unlock(e.name)})
-					Game.upgradesToRebuild = 1
-					Game.Popup('<div style="font-size:80%;">OVERPOWERED!</div>',Game.mouseX,Game.mouseY);
+					Game.lumps=999999999999
+					Game.Popup('<div style="font-size:80%;">+999 billion sugar lumps!</div>',Game.mouseX,Game.mouseY);
+				},
+				fail:function()
+				{
+					Game.lumps=0
+					Game.Popup('<div style="font-size:80%;">All sugar lumps lost!</div>',Game.mouseX,Game.mouseY);
+				},
+			},
+			'ninebillion cookiesearn':{
+				name:'9 billion cookies',
+				desc:'Earns you 999,999,999,999 cookies from thin air',
+				failDesc:'Clears ALL your cookies',
+				icon:[31,11],
+				costMin:75,
+				costPercent:0.10,
+				win:function()
+				{
+					Game.earn(999999999999)
+					Game.Popup('<div style="font-size:80%;">+999 billion cookies!</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
 				{
 					Game.cookies=0
-					Game.Popup('<div style="font-size:80%;">A fate! All cookies lost!</div>',Game.mouseX,Game.mouseY);
+					Game.Popup('<div style="font-size:80%;">All cookies lost!</div>',Game.mouseX,Game.mouseY);
 				},
 			},
 		};
