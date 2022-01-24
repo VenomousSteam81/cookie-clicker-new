@@ -2,8 +2,6 @@
 
 ## A modded version of cookie clicker (that you can play without internet at any time)
 
-[![release](https://github.com/VenomousSteam81/cookie-clicker-new/actions/workflows/workflow.yml/badge.svg?event=status)](https://github.com/VenomousSteam81/cookie-clicker-new/actions/workflows/workflow.yml)
-
 ## Table of Contents
 
 - [Cookie Clicker New](#cookie-clicker-new)
