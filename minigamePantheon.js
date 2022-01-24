@@ -425,9 +425,9 @@ M.launch=function()
 			'</div>';
 		};
 		AddEvent(M.lumpRefill,'click',function(){
-			if (M.swaps<5)
+			if (M.swaps<3)
 			{Game.refillLump(1,function(){
-				M.swaps=5;
+				M.swaps=3;
 				M.swapT=Date.now();
 				PlaySound('snd/pop'+Math.floor(Math.random()*3+1)+'.mp3',0.75);
 			});}
@@ -469,7 +469,7 @@ M.launch=function()
 	}
 	M.reset=function()
 	{
-		M.swaps=5;
+		M.swaps=3;
 		M.swapT=Date.now();
 		for (var i in M.slot) {M.slot[i]=-1;}
 		for (var i in M.gods)
@@ -488,7 +488,7 @@ M.launch=function()
 		if (M.swaps==0) t=1000*60*60*16;
 		else if (M.swaps==1) t=1000*60*60*4;
 		var t2=M.swapT+t-Date.now();
-		if (t2<=0 && M.swaps<5) {M.swaps++;M.swapT=Date.now();}
+		if (t2<=0 && M.swaps<3) {M.swaps++;M.swapT=Date.now();}
 		M.lastSwapT++;
 	}
 	M.draw=function()
