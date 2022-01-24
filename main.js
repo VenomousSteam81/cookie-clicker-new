@@ -6501,6 +6501,11 @@ Game.Launch=function()
 					'News : pet '+choose(animals)+', dangerous fad or juicy new market?',
 					'News : person typing these wouldn\'t mind someone else breaking the news to THEM, for a change.',
 					'News : "average person bakes '+Beautify(Math.ceil(Game.cookiesEarned/7300000000))+' cookie'+(Math.ceil(Game.cookiesEarned/7300000000)==1?'':'s')+' a year" factoid actually just statistical error; '+Game.bakeryName+', who has produced '+Beautify(Game.cookiesEarned)+' cookies in their lifetime, is an outlier and should not have been counted.'
+					]),
+					choose([
+					'Note : You are playing the modded version by VenomousSteam81.',
+					'Note : The modded version is a little overpowered...',
+					'Note : Check out the Github Repo for any updates'
 					])
 				);
 			}
