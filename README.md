@@ -22,14 +22,17 @@
 ## Current Features
 
 - Working
-
-- Grimore (Spells)
-  - Overkill
+  - Grimore (Spells)
+    - Cookies
+    - Sugar Lumps
 
 - Work-In-Progress
+  - Garden (Seeds)
+    - Nice (OP Seed, really hard to get)
 
-- Pantheon (Gods)
-  - CPS God
+- Working on later date...
+  - Pantheon (Gods)
+    - CPS God
 
 ## SAVE FILES
 
