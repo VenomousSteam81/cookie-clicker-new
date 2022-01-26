@@ -122,10 +122,9 @@ M.launch=function()
 				name:'CPS, Spirit of CPS',
 				icon:[23,19],
 				descBefore:'<span class="red">You will get a bonus CPS boost.</span>',
-				desc1:'<span class="green">Your CPS gains by 100%.</span>',
-				desc2:'<span class="green">Your CPS gains by 50%.</span>',
-				desc3:'<span class="green">Your CPS gains by 25%.</span>',
-				descSpc:'<span class="green">Your CPS gains by 1000%.</span>',
+				desc1:'<span class="green">Your CPS gains by 1000%.</span>',
+				desc2:'<span class="green">Your CPS gains by 500%.</span>',
+				desc3:'<span class="green">Your CPS gains by 250%.</span>',
 				quote:'This spirit likes to give OP bonuses at NO cost.',
 			},
 		};
@@ -137,10 +136,9 @@ M.launch=function()
 		M.slot[0]=-1;//diamond socket
 		M.slot[1]=-1;//ruby socket
 		M.slot[2]=-1;//jade socket
-		M.slot[3]=-1;//special socket
 		
 		M.slotNames=[
-			'Diamond','Ruby','Jade', 'Special'
+			'Diamond','Ruby','Jade'
 		];
 		
 		M.swaps=3;//swaps left
@@ -161,7 +159,6 @@ M.launch=function()
 					(me.desc1?('<div class="templeEffect templeEffect1"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+me.desc1+'</div>'):'')+
 					(me.desc2?('<div class="templeEffect templeEffect2"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+me.desc2+'</div>'):'')+
 					(me.desc3?('<div class="templeEffect templeEffect3"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.desc3+'</div>'):'')+
-					(me.descSpc?('<div class="templeEffect templeEffectSpc"><div class="usesIcon shadowFilter templeGem templeGemSpc"></div>'+me.descSpc+'</div>'):'')+
 					(me.descAfter?('<div class="templeEffect">'+me.descAfter+'</div>'):'')+
 					(me.quote?('<q>'+me.quote+'</q>'):'')+
 				'</div></div>';
@@ -188,7 +185,6 @@ M.launch=function()
 						(me.desc1?('<div class="templeEffect templeEffect1'+(me.slot==0?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+me.desc1+'</div>'):'')+
 						(me.desc2?('<div class="templeEffect templeEffect2'+(me.slot==1?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+me.desc2+'</div>'):'')+
 						(me.desc3?('<div class="templeEffect templeEffect3'+(me.slot==2?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.desc3+'</div>'):'')+
-						(me.desc3?('<div class="templeEffect templeEffectSpc'+(me.slot==3?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.descSpc+'</div>'):'')+
 						(me.quote?('<q>'+me.quote+'</q>'):'')+
 					'</div>'
 				):
@@ -342,7 +338,6 @@ M.launch=function()
 		'.templeGod1{background-position:-60px 0px;} .templeGod1:hover{background-position:-60px -74px;} .templeGod1:active{background-position:-60px 74px;}'+
 		'.templeGod2{background-position:-120px 0px;} .templeGod2:hover{background-position:-120px -74px;} .templeGod2:active{background-position:-120px 74px;}'+
 		'.templeGod3{background-position:-180px 0px;} .templeGod3:hover{background-position:-180px -74px;} .templeGod3:active{background-position:-180px 74px;}'+
-		'.templeGodSpc{background-position:-240px 0px;} .templeGodSpc:hover{background-position:-240px -74px;} .templeGod4:active{background-position:-240px 74px;}'+
 		
 		'.templeGod:hover .templeIcon{top:-1px;}'+
 		'.templeGod.ready:hover .templeIcon{animation-name:bounce;animation-iteration-count:infinite;animation-duration:0.8s;}'+
@@ -357,7 +352,6 @@ M.launch=function()
 		'.templeGem1{background-position:-1104px -720px;}'+
 		'.templeGem2{background-position:-1128px -720px;}'+
 		'.templeGem3{background-position:-1104px -744px;}'+
-		'.templeGemSpc{background-position:-1128px -744px;}'+
 		
 		'.templeSlot .templeGod,.templeSlot .templeGod:hover,.templeSlot .templeGod:active{background:none;}'+
 		
@@ -374,7 +368,6 @@ M.launch=function()
 		'#templeSlot0{top:-4px;}'+
 		'#templeSlot1{top:0px;}'+
 		'#templeSlot2{top:4px;}'+
-		'#templeSlotSpc{top:8px;}'+
 		
 		'#templeInfo{position:relative;display:inline-block;margin:8px auto 0px auto;padding:8px 16px;padding-left:32px;text-align:center;font-size:11px;color:rgba(255,255,255,0.75);text-shadow:-1px 1px 0px #000;background:rgba(0,0,0,0.75);border-radius:16px;}'+
 		'</style>';
