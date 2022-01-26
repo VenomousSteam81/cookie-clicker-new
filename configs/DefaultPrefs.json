@@ -1,0 +1,30 @@
+{
+    "Game":{
+        "prefs":{
+            "particles":"1",
+            "numbers":"1",
+            "autosave":"1",
+            "autoupdate":"1",
+            "milk":"1",
+            "fancy":"1",
+            "warn":"0",
+            "cursors":"1",
+            "focus":"1",
+            "popups":"0",
+            "format":"0",
+            "notifs":"0",
+            "animate":"1",
+            "wobbly":"1",
+            "monospace":"0",
+            "filters":"0",
+            "cookiesound":"1",
+            "crates":"0",
+            "altDraw":"0",
+            "showBackupWarning":"1",
+            "extraButtons":"1",
+            "askLumps":"0",
+            "customGrandmas":"1",
+            "timeout":"0"
+        }
+    }
+}
