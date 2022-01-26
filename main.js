@@ -9,7 +9,7 @@ http://orteil.dashnet.org
 */
 //READ README.md
 
-var VERSION=Modded;
+var VERSION=2.031;
 var BETA=0;
 
 
