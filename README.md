@@ -27,8 +27,7 @@
     - Sugar Lumps
 
 - Work-In-Progress
-  - Garden (Seeds)
-    - Nice (OP Seed, really hard to get)
+  - New building (I will use a random name...)
 
 - Working on later date...
   - Pantheon (Gods)
