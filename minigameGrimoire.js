@@ -282,7 +282,7 @@ M.launch=function()
 				costPercent:0.10,
 				win:function()
 				{
-					Game.earn(999999999999)
+					Game.Earn(999999999999)
 					Game.Popup('<div style="font-size:80%;">+999 billion cookies!</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
