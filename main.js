@@ -4343,7 +4343,7 @@ Game.Launch=function()
 				var godLvl=Game.hasGod('cps');
 				if (godLvl==1) mult*=1.250;
 				else if (godLvl==2) mult*=1.500;
-				else if (godLvl==3) mult*=1.1000;
+				else if (godLvl==3) mult*=1.999;
 			}
 			
 			if (Game.Has('Santa\'s legacy')) mult*=1+(Game.santaLevel+1)*0.03;
