@@ -1623,7 +1623,7 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.offlineMods=function()
 		{
-			Game.LoadMod(__dirname+'preload/CM/CookieMonster.js')
+			Game.LoadMod(__dirname+'preload/CM/dist/CookieMonster.js')
 		}
 		
 
