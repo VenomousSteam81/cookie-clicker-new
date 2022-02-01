@@ -1623,7 +1623,12 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.offlineMods=function()
 		{
+			try {
 			Game.LoadMod('preload/CM/dist/CookieMonster.js')
+			} catch (error) {
+				console.log(error)
+				Game.Popup(`<div style="font-size:80%;">There was an error<br>${error}</div>`,Game.mouseX,Game.mouseY);
+			}
 		};
 		
 
