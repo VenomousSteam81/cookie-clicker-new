@@ -1621,16 +1621,17 @@ Game.Launch=function()
 		/*=====================================================================================
 		LOADING OFFLINE MODS...
 		=======================================================================================*/
-		Game.offlineMods=function()
+		Game.offlineMods=function() {return Game.LoadMod('preload/CM/dist/CookieMonster.js')}
+		/*
 		{
 			try {
 			Game.LoadMod('preload/CM/dist/CookieMonster.js')
 			} catch (error) {
-				console.log(error)
-				Game.Popup(`<div style="font-size:80%;">There was an error<br>${error}</div>`,Game.mouseX,Game.mouseY);
+				//console.log(error)
+				Game.Popup(`<div style="font-size:80%;">There was an error:\n${error}</div>`,Game.mouseX,Game.mouseY);
 			}
 		};
-		
+		*/
 
 
 		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.png','imperfectCookie.png');
