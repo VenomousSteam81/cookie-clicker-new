@@ -18,6 +18,7 @@
     * Cookie Clicker is Copyright Ortiel, 2020
     * I am in no way teamed, grouped, or associated with Ortiel
     * This is for learning purposes, fun, and learning purposes ONLY
+    * All mods in the `preload` folder are not mine, they are only for fun and offline mods
 
 ## Current Features
 
