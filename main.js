@@ -1617,8 +1617,17 @@ Game.Launch=function()
 			});
 		}
 		
+
+		/*=====================================================================================
+		LOADING OFFLINE MODS...
+		=======================================================================================*/
+		Game.offlineMods=function()
+		{
+			Game.LoadMod(__dirname+'preload/CM/CookieMonster.js')
+		}
 		
-		
+
+
 		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.png','imperfectCookie.png');
 		//upgrades and achievements can use other pictures than icons.png; declare their icon with [posX,posY,'http://example.com/myIcons.png']
 		//check out the "UNLOCKING STUFF" section to see how unlocking achievs and upgrades is done
@@ -2232,14 +2241,6 @@ Game.Launch=function()
 					}
 				}
 			}
-		}
-		
-		/*=====================================================================================
-		LOADING OFFLINE MODS...
-		=======================================================================================*/
-		Game.offlineMods=function()
-		{
-			Game.LoadMod('preload/CM/CookieMonster.js') //load last so no issues
 		}
 
 		/*=====================================================================================
