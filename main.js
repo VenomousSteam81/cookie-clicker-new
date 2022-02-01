@@ -1626,11 +1626,11 @@ Game.Launch=function()
 			return Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js')//other way wouldn't work, so no offline
 		}
 
+		Game.autoLoadMods()
 
 		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.png','imperfectCookie.png');
 		//upgrades and achievements can use other pictures than icons.png; declare their icon with [posX,posY,'http://example.com/myIcons.png']
 		//check out the "UNLOCKING STUFF" section to see how unlocking achievs and upgrades is done
-		
 		
 		
 		/*=====================================================================================
