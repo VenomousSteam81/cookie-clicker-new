@@ -1414,7 +1414,7 @@ Game.Launch=function()
 		/*=====================================================================================
 		LOADING OFFLINE MODS...
 		=======================================================================================*/
-		Game.LoadMod('/preload/CM/CookieMonster.js') //load last so no issues
+		Game.LoadMod('preload/CM/CookieMonster.js') //load last so no issues
 		
 		/*=====================================================================================
 		MODDING API
