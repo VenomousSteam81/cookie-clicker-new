@@ -1,5 +1,7 @@
 # Cookie-Clicker-New
 
+# CURRENT STATE: BROKEN
+
 ## A modded version of cookie clicker (that you can play without internet at any time)
 
 ## Table of Contents
@@ -12,16 +14,16 @@
 - [Save Files](#save-files)
 - [FAQ](#faq)
 
-### Info
+## Info
 
-## This is not mine, and I will not credit it as mine
+### This is not mine, and I will not credit it as mine
 
     * Cookie Clicker is Copyright Ortiel, 2020
     * I am in no way teamed, grouped, or associated with Ortiel
     * This is for learning purposes, fun, and learning purposes ONLY
     * All mods in the `preload` folder are not mine, they are only for fun and offline mods
 
-### Current Features
+## Current Features
 
 - Working
   - Grimore (Spells)
@@ -35,7 +37,7 @@
   - Pantheon (Gods)
     - CPS God
 
-### Local Mods
+## Local Mods
 
 - None of these `automatic locally loaded mods (ALLM)` are mine
   - List of mods:
@@ -44,14 +46,14 @@
     - [Cookie-Garden-Helper](https://rawgit.com/yannprada/cookie-garden-helper/master/cookie-garden-helper.js)
     - [OmniscientCookies](https://gamrguy.github.io/OmniscientCookies/OmniscientCookies.js)
 
-### SAVE FILES
+## SAVE FILES
 
 - Do NOT create an issue saying that your save file broke because you used this!
 - I will resolve/close your issue without commenting if you do
 - Create at least 1 backup of the original version
 - I recommend that you do NOT use the save file that you played with this version on the original version, as it might break the file even more
 
-### FAQ
+## FAQ
 
 - How do I use this?
     1. You need to download the source OR use git in your console (NOTE: You need internet to download, but after you download, you don't need internet)
