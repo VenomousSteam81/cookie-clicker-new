@@ -1632,7 +1632,14 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.autoLoadMods=function()
 		{
-			return Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js')//other way wouldn't work, so no offline
+			if (Game.ready) {
+				Game.LoadModLocal('allm/crustulum/Crustulum.js')
+				Game.LoadModLocal('allm/cookieGardenHelper/cookie-garden-helper.js')
+				Game.LoadModLocal('allm/ccIdeas/dist/CCIdeas.js')
+				//Game.LoadModLocal('')
+			} else {
+				console.log('Cannot load ALLM mods, please reload the page.')
+			}
 		}
 
 		Game.autoLoadMods()
