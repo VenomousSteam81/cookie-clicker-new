@@ -1580,18 +1580,7 @@ Game.Launch=function()
 			document.head.appendChild(js);
 			console.log('Loaded the mod '+url+', '+id+'.');
 		}
-		
-		Game.LoadMod=function(url)//this loads the mod at the given URL and gives the script an automatic id (URL "http://example.com/my_mod.js" gives the id "modscript_my_mod")
-		{
-			var js=document.createElement('script');
-			var id=url.split('/');id=id[id.length-1].split('.')[0];
-			js.setAttribute('type','text/javascript');
-			js.setAttribute('id','modscript_'+id);
-			js.setAttribute('src',url);
-			document.head.appendChild(js);
-			console.log('Loaded the mod '+url+', '+id+'.');
-		}
-		
+
 		Game.LoadModLocal=function(path)//same as LoadMod, but local
 		{
 			var js=document.createElement('script');
