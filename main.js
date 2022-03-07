@@ -1580,18 +1580,7 @@ Game.Launch=function()
 			document.head.appendChild(js);
 			console.log('Loaded the mod '+url+', '+id+'.');
 		}
-/*
-		Game.LoadModLocal=function(path)//same as LoadMod, but local
-		{
-			var js=document.createElement('script');
-			var id=path.split('/');id=id[id.length-1].split('.')[0];
-			js.setAttribute('type','text/javascript');
-			js.setAttribute('id','modscript_'+id);
-			js.setAttribute('src',path);
-			document.head.appendChild(js);
-			console.log('Loaded the mod '+path+', '+id+'.');
-		}
-*/
+
 		if (false)
 		{
 			//EXAMPLE MOD
@@ -1626,25 +1615,6 @@ Game.Launch=function()
 			});
 		}
 		
-
-		/*=====================================================================================
-		LOADING OFFLINE MODS...
-		=======================================================================================*/
-/*
-		Game.autoLoadMods=function()
-		{
-			if (Game.ready) {
-				Game.LoadModLocal('allm/crustulum/Crustulum.js')
-				Game.LoadModLocal('allm/cookieGardenHelper/cookie-garden-helper.js')
-				Game.LoadModLocal('allm/ccIdeas/dist/CCIdeas.js')
-				//Game.LoadModLocal('')
-			} else {
-				console.log('Cannot load ALLM mods, please reload the page.')
-			}
-		}
-
-		Game.autoLoadMods()
-*/
 		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.png','imperfectCookie.png');
 		//upgrades and achievements can use other pictures than icons.png; declare their icon with [posX,posY,'http://example.com/myIcons.png']
 		//check out the "UNLOCKING STUFF" section to see how unlocking achievs and upgrades is done
