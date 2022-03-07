@@ -122,9 +122,9 @@ M.launch=function()
 				name:'CPS, Spirit of CPS',
 				icon:[23,19],
 				descBefore:'<span class="red">You will receive a base CpS boost.</span>',
-				desc1:'<span class="green">+250% base CpS.</span>',
-				desc2:'<span class="green">+500% base CpS.</span>',
-				desc3:'<span class="green">+1000% base CpS.</span>',
+				desc1:'<span class="green">+500% base CpS.</span>',
+				desc2:'<span class="green">+1000% base CpS.</span>',
+				desc3:'<span class="green">+5000% base CpS.</span>',
 				quote:'This spirit likes to give OP bonuses at NO cost.',
 			},
 		};

@@ -578,6 +578,19 @@ M.launch=function()
 					if (age>=this.mature) M.dropUpgrade('Ichor syrup',0.005);
 				},
 			},
+			'overpower': {
+				name:'OVERPOWER Seed',
+				fungus:false,
+				icon:34,
+				cost:99,
+				costM:999999999999999,
+				ageTick:2,
+				ageTickR:2.5,
+				mature:90,
+				children:[],
+				effsStr:'<div class="green">&bull; Your CPS goes through the roof</div><div class="red">&bull; Nothing</div>',
+				q:'This invisible plant is overpowered.',
+			}
 		};
 		M.plantsById=[];var n=0;
 		for (var i in M.plants)
@@ -862,6 +875,7 @@ M.launch=function()
 							else if (name=='wrinklegill') {effs.wrinklerSpawn+=0.02*mult;effs.wrinklerEat+=0.01*mult;}
 							else if (name=='greenRot') {effs.goldenCookieDur+=0.005*mult;effs.goldenCookieFreq+=0.01*mult;effs.itemDrops+=0.01*mult;}
 							else if (name=='shriekbulb') {effs.cps*=1-0.02*mult;}
+							else if (name=='overpower') {effs.cps*=999+1*mult;}
 						}
 					}
 				}
@@ -922,6 +936,16 @@ M.launch=function()
 				effsStr:'<div class="gray">&bull; tick every <b>5 minutes</b></div><div class="red">&bull; passive plant effects <b>-75%</b></div><div class="green">&bull; plants spread and mutate <b>3 times more</b></div><div class="green">&bull; weeds appear <b>10 times</b> less</div>',
 				q:'Soil made of bits and pieces of bark and sawdust. Helpful for young sprouts to develop, not so much for mature plants.',
 			},
+			'no':{
+				name:'Best Soil',
+				icon:1,
+				tick:0.5,
+				effMult:99,
+				weedMult:0,
+				req:2000,
+				effsStr:'<div class="gray">&bull; tick every <b>1 minutes</b></div><div class="green">&bull; passive plant effects <b>+99%</b></div><div class="green">&bull; <b>blank</div><div class="green">&bull; weeds appear <b>0 times</b> less</div>',
+				q:'SOIL',
+			}
 		};
 		M.soilsById=[];var n=0;for (var i in M.soils){M.soils[i].id=n;M.soils[i].key=i;M.soilsById[n]=M.soils[i];n++;}
 		

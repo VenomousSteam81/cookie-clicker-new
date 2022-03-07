@@ -1580,7 +1580,7 @@ Game.Launch=function()
 			document.head.appendChild(js);
 			console.log('Loaded the mod '+url+', '+id+'.');
 		}
-
+/*
 		Game.LoadModLocal=function(path)//same as LoadMod, but local
 		{
 			var js=document.createElement('script');
@@ -1591,7 +1591,7 @@ Game.Launch=function()
 			document.head.appendChild(js);
 			console.log('Loaded the mod '+path+', '+id+'.');
 		}
-		
+*/
 		if (false)
 		{
 			//EXAMPLE MOD
@@ -1630,6 +1630,7 @@ Game.Launch=function()
 		/*=====================================================================================
 		LOADING OFFLINE MODS...
 		=======================================================================================*/
+/*
 		Game.autoLoadMods=function()
 		{
 			if (Game.ready) {
@@ -1643,7 +1644,7 @@ Game.Launch=function()
 		}
 
 		Game.autoLoadMods()
-
+*/
 		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.png','imperfectCookie.png');
 		//upgrades and achievements can use other pictures than icons.png; declare their icon with [posX,posY,'http://example.com/myIcons.png']
 		//check out the "UNLOCKING STUFF" section to see how unlocking achievs and upgrades is done
@@ -4365,9 +4366,9 @@ Game.Launch=function()
 				else if (godLvl==3) buildMult*=0.99;
 
 				var godLvl=Game.hasGod('cps');
-				if (godLvl==1) mult*=1.250;
-				else if (godLvl==2) mult*=1.500;
-				else if (godLvl==3) mult*=1.1000;
+				if (godLvl==1) mult*=1.500;
+				else if (godLvl==2) mult*=1.1000;
+				else if (godLvl==3) mult*=1.5000;
 			}
 			
 			if (Game.Has('Santa\'s legacy')) mult*=1+(Game.santaLevel+1)*0.03;

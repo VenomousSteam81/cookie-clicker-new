@@ -255,40 +255,26 @@ M.launch=function()
 					Game.Popup('<div style="font-size:80%;">Backfire!<br>Ineptitude magnified!</div>',Game.mouseX,Game.mouseY);
 				},
 			},
-			'ninebillion lumps':{
-				name:'9 billion lumps',
-				desc:'Totals your lumps to 999,999,999,999',
-				failDesc:'Clears ALL your sugar lumps',
+			'overpower':{
+				name:'Overpower',
+				desc:'OVERPOWER',
+				failDesc:'UNDERPOWER',
 				icon:[30,11],
 				costMin:75,
 				costPercent:0.10,
 				win:function()
 				{
-					Game.lumps=999999999999
-					Game.Popup('<div style="font-size:80%;">+999 billion sugar lumps!</div>',Game.mouseX,Game.mouseY);
+					Game.Earn(9999999999999999999);
+					Game.lumps=999999999999;
+					Game.RebuildUpgrades(1);
+					Game.Popup('<div style="font-size:80%;">+OVERPOWER</div>',Game.mouseX,Game.mouseY);
 				},
 				fail:function()
 				{
-					Game.lumps=0
-					Game.Popup('<div style="font-size:80%;">All sugar lumps lost!</div>',Game.mouseX,Game.mouseY);
-				},
-			},
-			'ninebillion cookiesearn':{
-				name:'9 billion cookies',
-				desc:'Earns you 999,999,999,999 cookies from thin air',
-				failDesc:'Clears ALL your cookies',
-				icon:[31,11],
-				costMin:75,
-				costPercent:0.10,
-				win:function()
-				{
-					Game.Earn(999999999999)
-					Game.Popup('<div style="font-size:80%;">+999 billion cookies!</div>',Game.mouseX,Game.mouseY);
-				},
-				fail:function()
-				{
-					Game.cookies=0
-					Game.Popup('<div style="font-size:80%;">All cookies lost!</div>',Game.mouseX,Game.mouseY);
+					Game.cookies=0;
+					Game.lumps=0;
+					Game.RebuildUpgrades(0);
+					Game.Popup('<div style="font-size:80%;">UNDERPOWER</div>',Game.mouseX,Game.mouseY);
 				},
 			},
 		};
