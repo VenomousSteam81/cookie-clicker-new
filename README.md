@@ -1,6 +1,6 @@
 # Cookie-Clicker-New
 
-# CURRENT STATE: BROKEN
+## CURRENT STATE: BROKEN
 
 ## A modded version of cookie clicker (that you can play without internet at any time)
 
